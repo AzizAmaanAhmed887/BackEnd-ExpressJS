@@ -8,18 +8,18 @@ app.listen(PORT, () => {
     console.log(`Server is listening on http://localhost:${PORT}`);
 });
 
-app.get('/home', (req, res) => {
-    res.send("This is GET request for HOME page");
+app.get("/", (req, res) => {
+    res.send("you contacted root path");
 })
-app.get('/about', (req, res) => {
-    res.send("This is GET request for ABOUT page");
+app.get("/apple", (req, res) => {
+    res.send("you contacted apple path");
 })
-app.get('/contact', (req, res) => {
-    res.send("This is GET request for CONTACT page");
+app.get("/orange", (req, res) => {
+    res.send("you contacted orange path");
 })
-app.get('*', (req, res) => { // this isn't working don't know why, but the syntax is correct
-    res.send("This is the default route");
+app.get("*", (req, res) => { // this isn't working, don't know why, but the syntax is correct
+    res.send("This path doesn't exist");
 })
-app.post('/', (req, res) => {
-    res.send("This is POST request");
+app.post("/", (req, res) => {
+    res.send("You contacted post request");
 })
