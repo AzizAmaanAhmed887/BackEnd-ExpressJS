@@ -16,13 +16,13 @@ app.get("/search", (req, res) => {
     res.send(`<h1> the search query is: ${q}</h1>`);
 });
 
-// app.get("/", (req, res) => { //root path
-//     res.send("Im root path");
-// })
-//
-// app.get("/:id", (req, res) => { //root path
-//     res.send(`User id is: ${req.params.id}`);
-// })
+app.get("/", (req, res) => { //root path
+    res.send("Im root path");
+})
+
+app.get("/:id", (req, res) => { //root path
+    res.send(`User id is: ${req.params.id}`);
+})
 app.get("/apple", (req, res) => { // /apple
     res.send("Im apple path");
 })
