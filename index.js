@@ -23,15 +23,15 @@ app.get("/search", (req, res) => {
 // app.get("/:id", (req, res) => { //root path
 //     res.send(`User id is: ${req.params.id}`);
 // })
-// app.get("/apple", (req, res) => { // /apple
-//     res.send("Im apple path");
-// })
-// app.get("/orange", (req, res) => {// /orange
-//     res.send("Im orange path");
-// })
-// app.get("/banana", (req, res) => { // /banana
-//     res.send("Im banana path");
-// })
+app.get("/apple", (req, res) => { // /apple
+    res.send("Im apple path");
+})
+app.get("/orange", (req, res) => {// /orange
+    res.send("Im orange path");
+})
+app.get("/banana", (req, res) => { // /banana
+    res.send("Im banana path");
+})
 // app.get("*", (req, res) => { // this wildcard route isn't working, don't know why, but the syntactically is correct
 //     res.send("This path doesn't exist");
 // })
