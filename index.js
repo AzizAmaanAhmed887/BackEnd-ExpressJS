@@ -6,7 +6,7 @@ const PORT = 8080;
 
 app.listen(PORT, () => {
     console.log(`Server is listening on http://localhost:${PORT}`);
-});
+})
 
 app.get("/search", (req, res) => {
     let {q} = req.query;
